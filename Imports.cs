@@ -5,7 +5,7 @@ using System.IO;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-namespace SamFirm
+namespace hadesFirm
 {
   internal class Imports
   {

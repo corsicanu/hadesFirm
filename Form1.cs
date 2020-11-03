@@ -10,7 +10,7 @@ using System.Reflection;
 using System.Threading;
 using System.Windows.Forms;
 
-namespace SamFirm
+namespace hadesFirm
 {
   public class Form1 : Form
   {
@@ -84,7 +84,7 @@ namespace SamFirm
         this.checkbox_autodecrypt.Checked = false;
       this.tooltip_binary.SetToolTip((Control) this.binary_lbl, "Full firmware including PIT file");
       this.tooltip_binary_box.SetToolTip((Control) this.binary_checkbox, "Full firmware including PIT file");
-      Logger.WriteLog("SamFirm v" + FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FileVersion, false);
+      Logger.WriteLog("hadesFirm v" + FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FileVersion, false);
       ServicePointManager.ServerCertificateValidationCallback = (RemoteCertificateValidationCallback) ((senderX, certificate, chain, sslPolicyErrors) => true);
     }
 
@@ -668,7 +668,7 @@ label_15:
       this.Controls.Add((Control) this.log_textbox);
       this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
       this.Name = nameof (Form1);
-      this.Text = "SamFirm";
+      this.Text = "hadesFirm";
       this.FormClosing += new FormClosingEventHandler(this.Form1_Close);
       this.Load += new EventHandler(this.Form1_Load);
       this.groupBox1.ResumeLayout(false);

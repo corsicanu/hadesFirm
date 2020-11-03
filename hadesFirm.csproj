@@ -5,10 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProjectGuid>{588C13FB-D8C3-423B-92D4-5F6B1731C37D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <AssemblyName>SamFirm</AssemblyName>
+    <AssemblyName>hadesFirm</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <RootNamespace>SamFirm</RootNamespace>
+    <RootNamespace>hadesFirm</RootNamespace>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -31,7 +31,7 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>SamFirm.Program</StartupObject>
+    <StartupObject>hadesFirm.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -52,6 +52,9 @@
     <LangVersion>7.3</LangVersion>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>bident_uRA_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Windows.Forms" />
@@ -109,8 +112,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AgentModule.dll" />
+    <Content Include="bident_uRA_icon.ico" />
     <Content Include="CommonModule.dll" />
     <Content Include="GlobalUtil.dll" />
+    <None Include="Resources\%24this.Icon.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">

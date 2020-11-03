@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SamFirm
+namespace hadesFirm
 {
   internal class Command
   {

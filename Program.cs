@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Windows.Forms;
 
-namespace SamFirm
+namespace hadesFirm
 {
   internal static class Program
   {

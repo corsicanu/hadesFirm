@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 
-namespace SamFirm
+namespace hadesFirm
 {
   public static class WebRequestExtension
   {

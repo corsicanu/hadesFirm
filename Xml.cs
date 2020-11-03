@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Xml.Linq;
 
-namespace SamFirm
+namespace hadesFirm
 {
   internal class Xml
   {
@@ -53,7 +53,7 @@ namespace SamFirm
       string dataver,
       bool BinaryNature = false)
     {
-      XDocument xdocument = XDocument.Parse(SamFirm.Xml.LatestVer);
+      XDocument xdocument = XDocument.Parse(hadesFirm.Xml.LatestVer);
       XElement xelement = xdocument.Element((XName) "FUSMsg").Element((XName) "FUSBody").Element((XName) "Put");
       xelement.Element((XName) "DEVICE_MODEL_NAME").Element((XName) "Data").Value = model;
       xelement.Element((XName) "DEVICE_LOCAL_CODE").Element((XName) "Data").Value = region;
@@ -73,7 +73,7 @@ namespace SamFirm
       string region,
       string model_type)
     {
-      XDocument xdocument = XDocument.Parse(SamFirm.Xml.BinaryInit);
+      XDocument xdocument = XDocument.Parse(hadesFirm.Xml.BinaryInit);
       XElement xelement = xdocument.Element((XName) "FUSMsg").Element((XName) "FUSBody").Element((XName) "Put");
       xelement.Element((XName) "BINARY_FILE_NAME").Element((XName) "Data").Value = file;
       xelement.Element((XName) "BINARY_VERSION").Element((XName) "Data").Value = version;
