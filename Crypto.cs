@@ -4,7 +4,7 @@ using System.Reflection;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace SamFirm
+namespace hadesFirm
 {
   internal class Crypto
   {

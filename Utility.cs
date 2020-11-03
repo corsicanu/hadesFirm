@@ -9,7 +9,7 @@ using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading;
 
-namespace SamFirm
+namespace hadesFirm
 {
   public static class Utility
   {

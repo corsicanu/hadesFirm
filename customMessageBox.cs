@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace SamFirm
+namespace hadesFirm
 {
   public class customMessageBox : Form
   {
@@ -105,7 +105,7 @@ namespace SamFirm
       this.MaximumSize = new Size(387, 133);
       this.MinimumSize = new Size(387, 133);
       this.Name = "customMessageBox";
-      this.Text = "SamFirm";
+      this.Text = "hadesFirm";
       ((ISupportInitialize) this.pictureBox1).EndInit();
       this.ResumeLayout(false);
       this.PerformLayout();

@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Resources;
 using System.Runtime.CompilerServices;
 
-namespace SamFirm.Properties
+namespace hadesFirm.Properties
 {
   [GeneratedCode("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
   [DebuggerNonUserCode]
@@ -24,9 +24,9 @@ namespace SamFirm.Properties
     {
       get
       {
-        if (object.ReferenceEquals((object) SamFirm.Properties.Resources.resourceMan, (object) null))
-          SamFirm.Properties.Resources.resourceMan = new ResourceManager("SamFirm.Properties.Resources", typeof (SamFirm.Properties.Resources).Assembly);
-        return SamFirm.Properties.Resources.resourceMan;
+        if (object.ReferenceEquals((object) hadesFirm.Properties.Resources.resourceMan, (object) null))
+          hadesFirm.Properties.Resources.resourceMan = new ResourceManager("hadesFirm.Properties.Resources", typeof (hadesFirm.Properties.Resources).Assembly);
+        return hadesFirm.Properties.Resources.resourceMan;
       }
     }
 
@@ -35,11 +35,11 @@ namespace SamFirm.Properties
     {
       get
       {
-        return SamFirm.Properties.Resources.resourceCulture;
+        return hadesFirm.Properties.Resources.resourceCulture;
       }
       set
       {
-        SamFirm.Properties.Resources.resourceCulture = value;
+        hadesFirm.Properties.Resources.resourceCulture = value;
       }
     }
   }

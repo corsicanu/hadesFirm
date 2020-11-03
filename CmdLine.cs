@@ -2,7 +2,7 @@
 using System.IO;
 using System.Threading;
 
-namespace SamFirm
+namespace hadesFirm
 {
   internal class CmdLine
   {
@@ -52,7 +52,7 @@ namespace SamFirm
 
     private static int DoDecrypt()
     {
-      Logger.WriteLog("========== SamFirm Firmware Decrypter ==========\n", false);
+      Logger.WriteLog("========== hadesFirm Firmware Decrypter ==========\n", false);
       Logger.WriteLog("Decrypting file " + CmdLine.file + "...", false);
       string outputFile = Path.GetFileNameWithoutExtension(CmdLine.file);
       CmdLine.CreateProgressbar();
@@ -93,7 +93,7 @@ namespace SamFirm
 
     private static int DoCheck()
     {
-      Logger.WriteLog("========== SamFirm Firmware Update Check ==========\n", false);
+      Logger.WriteLog("========== hadesFirm Firmware Update Check ==========\n", false);
       Command.Firmware firmware;
       if (string.IsNullOrEmpty(CmdLine.version))
       {
@@ -108,7 +108,7 @@ namespace SamFirm
 
     private static int DoDownload()
     {
-      Logger.WriteLog("========== SamFirm Firmware Downloader ==========\n", false);
+      Logger.WriteLog("========== hadesFirm Firmware Downloader ==========\n", false);
       Command.Firmware fw;
       if (string.IsNullOrEmpty(CmdLine.version))
       {
@@ -214,12 +214,12 @@ namespace SamFirm
     {
       Logger.WriteLog("Usage:\n", false);
       Logger.WriteLog("Update check:", false);
-      Logger.WriteLog("     SamFirm.exe -c -model [device model] -region [region code]\n                [-version [pda/csc/phone/data]] [-binary]", false);
+      Logger.WriteLog("     hadesFirm.exe -c -model [device model] -region [region code]\n                [-version [pda/csc/phone/data]] [-binary]", false);
       Logger.WriteLog("\nDecrypting:", false);
-      Logger.WriteLog("     SamFirm.exe -file [path-to-file.zip.enc2] -version [pda/csc/phone/data] [-meta metafile]", false);
-      Logger.WriteLog("     SamFirm.exe -file [path-to-file.zip.enc4] -version [pda/csc/phone/data] -logicValue [logicValue] [-meta metafile]", false);
+      Logger.WriteLog("     hadesFirm.exe -file [path-to-file.zip.enc2] -version [pda/csc/phone/data] [-meta metafile]", false);
+      Logger.WriteLog("     hadesFirm.exe -file [path-to-file.zip.enc4] -version [pda/csc/phone/data] -logicValue [logicValue] [-meta metafile]", false);
       Logger.WriteLog("\nDownloading:", false);
-      Logger.WriteLog("     SamFirm.exe -model [device model] -region [region code]\n                [-version [pda/csc/phone/data]] [-folder [output folder]]\n                [-binary] [-autodecrypt] [-nozip] [-meta metafile]", false);
+      Logger.WriteLog("     hadesFirm.exe -model [device model] -region [region code]\n                [-version [pda/csc/phone/data]] [-folder [output folder]]\n                [-binary] [-autodecrypt] [-nozip] [-meta metafile]", false);
     }
 
     public static void SaveMeta(Command.Firmware fw, string metafile)
@@ -230,7 +230,7 @@ namespace SamFirm
         Directory.CreateDirectory(Path.GetDirectoryName(metafile));
       using (TextWriter text = (TextWriter) File.CreateText(metafile))
       {
-        text.WriteLine("[SamFirmData]");
+        text.WriteLine("[hadesFirmData]");
         text.WriteLine("Model=" + fw.Model);
         text.WriteLine("Devicename=" + fw.DisplayName);
         text.WriteLine("Region=" + fw.Region);

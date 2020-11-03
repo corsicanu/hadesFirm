@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using SamFirm;
 
-namespace SamFirm
+namespace hadesFirm
 {
   public static class WebRequestExtension
   {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace SamFirm
+namespace hadesFirm
 {
   internal class Logger
   {
@@ -62,8 +62,8 @@ namespace SamFirm
     public static void SaveLog()
     {
       string AppLocation = System.AppDomain.CurrentDomain.BaseDirectory;
-      string LogFile = AppLocation + "SamFirm.log";
-      string OldLogFile = AppLocation + "SamFirm.log.old";
+      string LogFile = AppLocation + "hadesFirm.log";
+      string OldLogFile = AppLocation + "hadesFirm.log.old";
 
       try
       {
