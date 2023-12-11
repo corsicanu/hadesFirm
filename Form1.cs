@@ -859,7 +859,7 @@ label_15:
             this.Controls.Add(this.log_textbox);
             this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "hadesFirm (2k23 Edition)";
+            this.Text = "hadesFirm (2k24 Edition)";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_Close);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
