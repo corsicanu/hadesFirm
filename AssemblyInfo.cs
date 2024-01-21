@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("hadesFirm Reborn")]
-[assembly: AssemblyFileVersion("0.3.6.8")]
+[assembly: AssemblyFileVersion("0.3.6.9")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCopyright("Copyright zxz0O0 ©  2015 / Ivan Meler 2021-2023 / KSmith 2023 / corsicanu 2024")]
